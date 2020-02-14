@@ -1,13 +1,59 @@
-
 *{
     box-sizing: border-box;
+    font-size: 62.5%;
+}
+html {
+    font-size: 0.5em;
 }
 .screen {
     width: 100vw;
     height: 100vh;
     border: 2px solid black;
+    padding: 10px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .logoDiv img {
     width: 100px;
     height: 100px;
+}
+.userDiv a img {
+    width: 80px;
+    height: 100px;
+}
+div h1 {
+    text-align:center;
+    font-size: 2rem;
+}
+#contentcamille {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.orangeblock {
+    padding: 0.5rem;
+    width: 90%;
+
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+    margin: 5px;
+}
+.fromto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2px;
+}
+input {
+    width: 50vw;
 }
