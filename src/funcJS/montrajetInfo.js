@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import { randomText } from './randomFact';
 
 export const monTrajetInfo = () => {
   $('#content').empty();
@@ -10,26 +11,35 @@ export const monTrajetInfo = () => {
         <div class="map">
             <img src="./assets/images/trajet1.PNG">
         </div>
-          <div class="blockExpl blancOrange">
+          <div class="blockExpl orange">
             <h2>Résumé écologique</h2>
             <p>
                 Rejet de CO² : 120 g CO2/km.
             </p> 
           </div>
           
-          <div class="blockExpl blancOrange">
+          <div class="blockExpl orange">
                 <h2>Trajets Alternatifs</h2>
-                <p>
-                    Trajet 1
-                </p> 
-                <p>
-                    Trajet 2
-                </p> 
-                <p>
-                    Trajet 3
-                </p> 
+                <div class="trajetListe">
+                <p style="font-weight: bold;" id="1">Trajet 1</p></br>
+                <p>Rejet de CO² : 30 g CO2/km.</p>
+                <p>Véhicule : Velo</p></br>
+
+
+                <p style="font-weight: bold;" id="1">Trajet 2</p></br>
+                <p>Rejet de CO² : 60 g CO2/km</p>
+                <p>Véhicule : Train</p></br>
+
+
+                <p style="font-weight: bold;" id="1">Trajet 3</p></br>
+                <p>Rejet de CO² : 110 g CO2/km.</p>
+                <p>Véhicule : Voiture</p></br>
+
+
+                </div>
             </div>
         </div>
       `);
   $('#content').append(montrajetinfoDiv);
+  randomText();
 };

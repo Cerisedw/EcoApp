@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import { signUp, signIn } from './sign';
+import { randomText } from './randomFact';
 
 export const homeNoSign = () => {
   $('.screen').empty();
@@ -8,8 +9,8 @@ export const homeNoSign = () => {
   <div class="logo">
     <img src="./assets/images/leaf.png">
   </div>
+  <div id="randomText"></div>
   <div class="imgProfil">
-    <i class="fas fa-info-circle fa-6x"></i>
   </div>
 </div>
 <div id="content">
@@ -29,9 +30,9 @@ export const homeNoSign = () => {
   <div class="blockExpl vert">
     <h2>Nos Partenaires</h2>
     <div class="listePhoto">
+      <img src="./assets/images/hp.png">
       <img src="./assets/images/pikadab.png">
-      <img src="./assets/images/pikadab.png">
-      <img src="./assets/images/pikadab.png">
+      <img src="./assets/images/metroid.png">
     </div>
   </div>
   </div>
@@ -42,4 +43,5 @@ export const homeNoSign = () => {
   $('.logo').on('click', homeNoSign);
   $('#signup').on('click', signUp);
   $('#signin').on('click', signIn);
+  randomText();
 };

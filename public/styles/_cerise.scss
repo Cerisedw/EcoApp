@@ -3,6 +3,12 @@
     max-height: 200px;
     display:flex;
     justify-content: space-between;
+    #randomText{
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 17px;
+        color: #769b71;
+    }
     .logo{
         cursor: pointer;
     }
@@ -84,8 +90,9 @@
             display:flex;
             justify-content: space-evenly;
             img{
+                padding:5px;
                 width: 200px;
-                // background-color: white ;
+                background-color: white ;
                 margin-right: 10px;
             }
         }
@@ -98,6 +105,7 @@
             padding: 5px 10px;
             border-radius: 5%;
         }
+
     }
     .divButton{
         display:flex;

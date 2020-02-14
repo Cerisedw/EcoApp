@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import { montrajet1 } from './montrajet';
 import { monTrajetInfo } from './montrajetInfo';
+import { randomText } from './randomFact';
 
 export const btnInvert = () => {
   $('#content').empty();
@@ -37,4 +38,5 @@ export const btnInvert = () => {
   $('#content').append(montrajet1DivInvert);
   $('#invert').on('click', montrajet1);
   $('#btnLancerTrajet').on('click', monTrajetInfo);
+  randomText();
 };

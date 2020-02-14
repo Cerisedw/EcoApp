@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import { creerTrajet } from './creertrajet';
+import { randomText } from './randomFact';
 
 
 export const signIn = () => {
@@ -24,6 +25,7 @@ export const signIn = () => {
     `);
   $('#content').append(contentSignup);
   $('#btnSignIn').on('click', creerTrajet);
+  randomText();
 };
 
 export const signUp = () => {
@@ -51,4 +53,5 @@ export const signUp = () => {
 
   $('#content').append(contentSignup);
   $('#btnSignUp').on('click', signIn);
+  randomText();
 };

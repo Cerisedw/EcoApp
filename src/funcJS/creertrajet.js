@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import { montrajet1 } from './montrajet';
+import { randomText } from './randomFact';
 
 export const creerTrajet = () => {
   $('.screen').empty();
@@ -8,6 +9,7 @@ export const creerTrajet = () => {
   <div class="logo">
     <img src="./assets/images/leaf.png">
   </div>
+  <div id="randomText"></div>
   <div class="imgProfil">
     <img src="./assets/images/imgprofil.png" >
   </div>
@@ -20,10 +22,7 @@ export const creerTrajet = () => {
     <div class="sphere rouge" id="creerTrajet">
       <h2>Créer un trajet</h2>
     </div>
-    <div class="divButton">
-      <button disabled class="rouge">Classement</button>
-      <button disabled class="rouge">Infos</button>
-    </div>
+
   
   </div>
 </div>
@@ -31,4 +30,5 @@ export const creerTrajet = () => {
   $('.screen').append(creerTrajetDiv);
   $('#creerTrajet').on('click', montrajet1);
   $('.logo').on('click', creerTrajet);
+  randomText();
 };
