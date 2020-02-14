@@ -1,9 +1,10 @@
 import $ from 'jquery';
-import { signUp } from './sign';
+import { signUp, signIn } from './sign';
 
 export const home = () => {
   $('#content').empty();
   const homeContent = $(`
+  <div id="contentcerise">
     <div class="blockExpl">
     <h1>EcoAppli</h1>
     <p>Description de l'application. 
@@ -24,9 +25,11 @@ export const home = () => {
       <img src="./assets/images/leaf.png">
     </div>
   </div>
+  </div>
 
     `);
 
   $('#content').append(homeContent);
   $('#signup').on('click', signUp);
+  $('#signin').on('click', signIn);
 };
