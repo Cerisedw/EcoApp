@@ -1,11 +1,20 @@
 import $ from 'jquery';
 import { signUp, signIn } from './sign';
 
-export const home = () => {
-  $('#content').empty();
+export const homeNoSign = () => {
+  $('.screen').empty();
   const homeContent = $(`
+  <div id="navbar">
+  <div class="logo">
+    <img src="./assets/images/leaf.png">
+  </div>
+  <div class="imgProfil">
+    <i class="fas fa-info-circle fa-6x"></i>
+  </div>
+</div>
+<div id="content">
   <div id="contentcerise">
-    <div class="blockExpl">
+    <div class="blockExpl vert">
     <h1>EcoAppli</h1>
     <p>Description de l'application. 
       Ce qui permettra à l'utilisateur d'avoir une idée claire du but premier de l'application.
@@ -14,22 +23,23 @@ export const home = () => {
     </p>
   </div>
   <div class="divButton">
-    <button id="signin">Sign In</button>
-    <button id="signup">Sign Up</button>
+    <button class="vert" id="signin">Sign In</button>
+    <button class="vert" id="signup">Sign Up</button>
   </div>
-  <div class="blockExpl">
+  <div class="blockExpl vert">
     <h2>Nos Partenaires</h2>
     <div class="listePhoto">
-      <img src="./assets/images/leaf.png">
-      <img src="./assets/images/leaf.png">
-      <img src="./assets/images/leaf.png">
+      <img src="./assets/images/pikadab.png">
+      <img src="./assets/images/pikadab.png">
+      <img src="./assets/images/pikadab.png">
     </div>
   </div>
   </div>
-
+</div>
     `);
 
-  $('#content').append(homeContent);
+  $('.screen').append(homeContent);
+  $('.logo').on('click', homeNoSign);
   $('#signup').on('click', signUp);
   $('#signin').on('click', signIn);
 };

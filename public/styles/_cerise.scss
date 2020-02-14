@@ -9,26 +9,71 @@
     img{
         max-width: 50px;
     }
+    .imgProfil{
+        i{
+            color: #769b71;
+        }
+    }
 }
-
+.vert {
+    background-color: #769b71;
+    color:white;
+}
+.rouge{
+    background-color: #a43116;
+    color:white;
+}
+.orange{
+    background-color: #d66c2c;
+    color:white;
+}
+.blancOrange{
+    background-color: white;
+    color:#d66c2c;
+}
+.blancVert{
+    background-color: white;
+    color: #769b71;
+}
+.rougeNoB{
+    color: #a43116;
+}
 #contentcerise{
     padding: 20px 20%;
+    #creerTrajet{
+        margin-bottom: 70px;
+        cursor: pointer;
+    }
+    .sphere{
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;   
+        margin: 0 auto;
+        text-align: center;
+        padding: 185px 0;
+        h2{
+            font-weight: bold;
+            font-size: 4rem;
+            margin-bottom: 2rem;
+        }
+    }
     .blockExpl{
         text-align: center;
+        margin-bottom: 10px;
         padding: 50px;
-        min-height: 200px;
-        background-color: #769b71;
+        // min-height: 200px;
         border-radius: 5%;
-        color:white;
         h1, h2{
             font-weight: bold;
             font-size: 4rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
         label{
+            
             font: 2.5rem sans-serif;
         }
         input{
+            margin: 5px 0;
             height: 25px;
             font-size: 2rem;
         }
@@ -39,8 +84,9 @@
             display:flex;
             justify-content: space-evenly;
             img{
-                max-width: 200px;
-                background-color: white ;
+                width: 200px;
+                // background-color: white ;
+                margin-right: 10px;
             }
         }
         button{
@@ -49,8 +95,6 @@
             font-weight: bold;
             font-size: 2rem;
             border: none;
-            background-color: white;
-            color: #769b71;
             padding: 5px 10px;
             border-radius: 5%;
         }
@@ -65,11 +109,13 @@
             font-weight: bold;
             font-size: 2.5rem;
             border: none;
-            background-color: #769b71;
-            color: white;
             padding: 20px 40px;
             border-radius: 5%;
         }
     }
-
+    .map{
+        img{
+            width:100%;
+        }
+    }
 }
