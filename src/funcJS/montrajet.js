@@ -1,4 +1,5 @@
 import $ from 'jquery';
+// eslint-disable-next-line import/no-cycle
 import { btnInvert } from './invert';
 import { monTrajetInfo } from './montrajetInfo';
 import { randomText } from './randomFact';
