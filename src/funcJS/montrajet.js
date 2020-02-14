@@ -24,7 +24,7 @@ export const montrajet1 = () => {
           <h2>Véhicules</h2>
           <div class="listePhoto">
             <img src="./assets/images/velo.png">
-            <img src="./assets/images/train.png">
+            <img style="background-color: white;" src="./assets/images/train.png">
             <img src="./assets/images/voiture.png">
           </div>    
         </div>

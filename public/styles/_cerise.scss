@@ -16,6 +16,7 @@
         max-width: 50px;
     }
     .imgProfil{
+        cursor: pointer;
         i{
             color: #769b71;
         }
@@ -92,7 +93,7 @@
             img{
                 padding:5px;
                 width: 200px;
-                background-color: white ;
+                // background-color: white ;
                 margin-right: 10px;
             }
         }

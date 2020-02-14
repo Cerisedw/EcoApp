@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import { montrajet1 } from './montrajet';
 import { randomText } from './randomFact';
+import { profilFnc } from './profil';
 
 export const creerTrajet = () => {
   $('.screen').empty();
@@ -30,5 +31,6 @@ export const creerTrajet = () => {
   $('.screen').append(creerTrajetDiv);
   $('#creerTrajet').on('click', montrajet1);
   $('.logo').on('click', creerTrajet);
+  $('.imgProfil').on('click', profilFnc);
   randomText();
 };

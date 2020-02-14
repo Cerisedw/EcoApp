@@ -30,9 +30,9 @@ export const homeNoSign = () => {
   <div class="blockExpl vert">
     <h2>Nos Partenaires</h2>
     <div class="listePhoto">
+      <img src="./assets/images/pikadab.png">
       <img src="./assets/images/hp.png">
       <img src="./assets/images/pikadab.png">
-      <img src="./assets/images/metroid.png">
     </div>
   </div>
   </div>
