@@ -1,0 +1,36 @@
+#navbar {
+    max-height: 200px;
+    display:flex;
+    padding: 50px;
+    justify-content: space-between;
+    img{
+        max-width: 100px;
+    }
+}
+
+#content{
+    .blockExpl{
+        text-align: center;
+        padding: 50px;
+        min-height: 200px;
+        margin: 0 200px;
+        background-color: #769b71;
+        border-radius: 20%;
+        color:white;
+        h1{
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.divButton{
+    button{
+        border: none;
+        background-color: #769b71;
+        color: white;
+        padding: 20px 40px;
+        border-radius: 20%;
+
+    }
+}
