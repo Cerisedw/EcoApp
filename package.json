@@ -38,6 +38,6 @@
   "dependencies": {
     "jq-accordion": "^1.0.3",
     "jquery": "^3.4.1",
-    "jquery-ui": "^1.12.1"
+    "jquery-ui": "^1.13.0"
   }
 }
